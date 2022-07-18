@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- javascript -->
+    <script src="app.js" type="module" defer></script>
+    <title>Quiz App</title>
+</head>
+<body>
+   <div class="quiz-app">
+     <!-- Start Quiz -->
+     <div class="start-quiz">
+        <button class="start-button">Start Quiz</button>
+     </div>
+    <!-- Quiz details -->
+    <div class="quiz-rules none">
+       <div class="rules-header">
+        <h4>Some rules of this quiz</h4>
+    </div>
+    <hr>
+       <div class="rules-body">
+        <p>1. You will have only <span>15 seconds</span> per each question.</p>
+        <p>1. Once you select your answer it cannot be undone.</p>
+        <p>3. You cannot select any option if the time runs out.</p>
+        <p>4. You can't exit out of the game while you are playing.</p>
+        <p>5. You will get points based on the basis of your correct answers.</p>
+       </div>
+       <hr>
+       <div class="rules-options">
+        <button class="outline-button" id="exit-button">Exit quiz</button>
+        <button class="btn-primary" id="continue-button">Continue</button>
+       </div>
+    </div>
+    <!-- quiz questions -->
+    <div class="quiz-questions none">
+        <div class="question-header">
+            <h3>Awesome Quiz Application</h3>
+            <p>Time Left: <span class="timer">10</span></p>
+        </div>
+        <hr>
+        <div class="question-body">
+          <!-- loading questions and options through js file -->
+        </div>
+        <hr>
+            <div class="question-details">
+                <p><span class="current-question" id="current-question">1</span> of <span class="total-question" id="total-question">5</span> Questions</p>
+                <button class="btn-primary none" id="next-question">Next Que</button>
+            </div>
+    </div>
+    <!-- score section -->
+    <div class="score-section none">
+        <div class="score-header">
+            <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="score-description">
+                <!-- rendered from the js file -->
+        </div>
+        <div class="score-info">
+            <button class="btn-primary" id="replay">Replay Quiz</button>
+            <button class="outline-button" id="quit">Quit Quiz</button>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
